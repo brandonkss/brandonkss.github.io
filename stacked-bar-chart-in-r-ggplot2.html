@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://miro.medium.com/max/1400/1*uHjHPRMWma2RiRKCFWMXUw.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Stacked Bar Chart In R Ggplot2</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Stacked Bar Chart In R Ggplot2",
+  "datePublished": "2022-01-01",
+  "image": [https://www.researchgate.net/publication/334692711/figure/fig1/AS:784742941196288@1564108705040/Stacked-bar-plot-drawn-with-R-package-ggplot-Wickham-et-al-2018-code-available-at.png,https://community.powerbi.com/t5/image/serverpage/image-id/188134i00D75EBC5D8EC8D2?v=v2,https://www.r-graph-gallery.com/img/graph/48-grouped-barplot-with-ggplot22.png],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shuriken MOD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=stacked bar chart in r ggplot2",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Shuriken MOD" class="navbar-brand mb-1">Shuriken MOD</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : '226605b37c113fca7c6276931aa783e5',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.variousformatscontent.com/226605b37c113fca7c6276931aa783e5/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Stacked Bar Chart In R Ggplot2</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-info" href="/babies-height-and-weight-chart.html">babies height and weight chart</a>
+											<a class="badge badge-secondary" href="/des-moines-civic-center-seating-chart.html">des moines civic center seating chart</a>
+											<a class="badge badge-secondary" href="/usps-flat-rate-costs-chart.html">usps flat rate costs chart</a>
+											<a class="badge badge-info" href="/ff7-limit-breaks-chart.html">ff7 limit breaks chart</a>
+											<a class="badge badge-dark" href="/nature-throid-dosage-chart.html">nature throid dosage chart</a>
+											<a class="badge badge-light" href="/tenth-hundredth-thousandth-chart.html">tenth hundredth thousandth chart</a>
+											<a class="badge badge-warning" href="/box-and-whisker-chart.html">box and whisker chart</a>
+											<a class="badge badge-secondary" href="/usmarine-corps-weight-chart.html">usmarine corps weight chart</a>
+						</div>
+
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/g5G5q.png" data-lightbox="roadtrip" data-title="Showing Data Values On Stacked Bar Chart In Ggplot2 Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/g5G5q.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj8fq8F9cM9BNoOFlMIakOcArrxsnEN6qUKkCC58FDrqFGHiHd72dvJmgbQ6OiLMcYdVI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Showing Data Values On Stacked Bar Chart In Ggplot2 Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.r-graph-gallery.com/48-grouped-barplot-with-ggplot2_files/figure-html/thecode3-1.png" data-lightbox="roadtrip" data-title="Grouped Stacked And Percent Stacked Barplot In Ggplot2 The R Graph Gallery">
+						<img class="card-img" src="https://www.r-graph-gallery.com/48-grouped-barplot-with-ggplot2_files/figure-html/thecode3-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIey9GIjtNA6xl6peQQ_ZY7CJaWCsLlE6QrIHbxEcUs4VnCcH7Us4UIrDudlrhbuO4D0o';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Grouped Stacked And Percent Stacked Barplot In Ggplot2 The R Graph Gallery
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://t-redactyl.io/figure/bar14-1.png" data-lightbox="roadtrip" data-title="Creating Plots In R Using Ggplot2 Part 4 Stacked Bar Plots">
+						<img class="card-img" src="https://t-redactyl.io/figure/bar14-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-4_i3CySSpU30uZ7HaJoriXBuQLy8SaKFAN2pVMI-ioQ5lyFIG1X0q5RpsYZe_tJkeM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Creating Plots In R Using Ggplot2 Part 4 Stacked Bar Plots
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://r-charts.com/en/part-whole/stacked-bar-chart-ggplot2_files/figure-html/stacked-bar-chart-ggplot2.png" data-lightbox="roadtrip" data-title="Stacked Bar Chart In Ggplot2 R Charts">
+						<img class="card-img" src="https://r-charts.com/en/part-whole/stacked-bar-chart-ggplot2_files/figure-html/stacked-bar-chart-ggplot2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJ96XfauTF2WaCxShcZUWRUtuoetzhIZtZYeXptg76JEn_1Bni9a-svc-NxoONf0XXq0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Stacked Bar Chart In Ggplot2 R Charts
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://t-redactyl.io/figure/sb_finalresult-1.png" data-lightbox="roadtrip" data-title="Creating Plots In R Using Ggplot2 Part 4 Stacked Bar Plots">
+						<img class="card-img" src="https://t-redactyl.io/figure/sb_finalresult-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlDi2FOZSbx3fOHqr0INKldDlGxBkP-eMfQHC7A81h7n-D_C9tu-5SHng43INISaVcqfA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Creating Plots In R Using Ggplot2 Part 4 Stacked Bar Plots
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.r-graph-gallery.com/img/graph/48-grouped-barplot-with-ggplot23.png" data-lightbox="roadtrip" data-title="Grouped And Stacked Barplot The R Graph Gallery">
+						<img class="card-img" src="https://www.r-graph-gallery.com/img/graph/48-grouped-barplot-with-ggplot23.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXEikonuP3ixuYlss1UZXbygKL7gPJb2393TFfTL7b0PmKHP1SILUKHfCJdGIfQALw7Wc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Grouped And Stacked Barplot The R Graph Gallery
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+	</center>
+</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.datanovia.com/en/wp-content/uploads/dn-tutorials/ggplot2/figures/108-ggplot-stacked-bar-chart-geom_col-basic-1.png" data-lightbox="roadtrip" data-title="How To Create A Ggplot Stacked Bar Chart Datanovia">
+						<img class="card-img" src="https://www.datanovia.com/en/wp-content/uploads/dn-tutorials/ggplot2/figures/108-ggplot-stacked-bar-chart-geom_col-basic-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1XqS1y9QimUaDKE6y5zKcb93Z9AJHGCYi1CABSLZ3niirpGA0ZZCI2yHCJE3xgsbSgQM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Create A Ggplot Stacked Bar Chart Datanovia
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://statisticsglobe.com/wp-content/uploads/2020/04/figure-2-stacked-ggplot2-bar-chart-with-frequencies-text-in-R.png" data-lightbox="roadtrip" data-title="Plot Frequencies On Top Of Stacked Bar Chart With Ggplot2 In R Example">
+						<img class="card-img" src="https://statisticsglobe.com/wp-content/uploads/2020/04/figure-2-stacked-ggplot2-bar-chart-with-frequencies-text-in-R.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKGNW5UvV3ZOTaS3trVluEjEdzuShTleD-8hYkX7hM6EZOkseYqSydFgm2Dh3Gg1DrZCk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Plot Frequencies On Top Of Stacked Bar Chart With Ggplot2 In R Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://imgur.com/BYpTOrR.jpg" data-lightbox="roadtrip" data-title="Can T Draw The Grouped Value Above Stacked Bar Plot In Ggplot2 Stack Overflow">
+						<img class="card-img" src="https://imgur.com/BYpTOrR.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpxODTVm8HdgSYC__Jpq8crS-Xe6AdCrSElzvvQDW6gj8Lc08WrucMmtAng9ZV8gifjBY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Can T Draw The Grouped Value Above Stacked Bar Plot In Ggplot2 Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://michaeltoth.me/figures/20190426_ggplot_geom_bar/stacked_bar-1.png" data-lightbox="roadtrip" data-title="Detailed Guide To The Bar Chart In R With Ggplot R Bloggers">
+						<img class="card-img" src="https://michaeltoth.me/figures/20190426_ggplot_geom_bar/stacked_bar-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pL8rkh8OLFZu5i-pIvRW4QlQ1WCWhkcNdvfwSeuHb4R-n8tHyGCpQahR7M3mAz17eOM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Detailed Guide To The Bar Chart In R With Ggplot R Bloggers
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.sthda.com/sthda/RDoc/figure/ggplot2/ggplot2-barplot-multiple-groups-stacked-add-labels-middle-1.png" data-lightbox="roadtrip" data-title="Ggplot2 Barplots Quick Start Guide R Software And Data Visualization Easy Guides Wiki Sthda">
+						<img class="card-img" src="http://www.sthda.com/sthda/RDoc/figure/ggplot2/ggplot2-barplot-multiple-groups-stacked-add-labels-middle-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfZ5G0czrHHC2bDXMTgcYlAl8fmgB8nRD0qW_qmdITrE-tiMpW-FSfRJlNvmiX3HrjSgk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ggplot2 Barplots Quick Start Guide R Software And Data Visualization Easy Guides Wiki Sthda
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://community.powerbi.com/t5/image/serverpage/image-id/188134i00D75EBC5D8EC8D2?v=v2" data-lightbox="roadtrip" data-title="Solved Stacked Clustered Bar Graph Using R Microsoft Power Bi Community">
+						<img class="card-img" src="https://community.powerbi.com/t5/image/serverpage/image-id/188134i00D75EBC5D8EC8D2?v=v2" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTDew0FPkcHqykObC9DZ87wwxa3GMHle_9gb8CT9ltAndd8deU7SHB3NxMTO7GcCEgTrM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Solved Stacked Clustered Bar Graph Using R Microsoft Power Bi Community
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://community.rstudio.com/uploads/default/optimized/2X/2/2705cee3b99ca67ff6cc3f761d323ff3964b33f5_2_1024x609.jpeg" data-lightbox="roadtrip" data-title="Create A Percentage Stacked Bar Chart Tidyverse Rstudio Community">
+						<img class="card-img" src="https://community.rstudio.com/uploads/default/optimized/2X/2/2705cee3b99ca67ff6cc3f761d323ff3964b33f5_2_1024x609.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0rzvaCSeuEdAhpoPwwLgv9A0i23QGblg4DLzBGV05scHYJ2mC1m60xqcXBBJYNncHM0g';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Create A Percentage Stacked Bar Chart Tidyverse Rstudio Community
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.r-graph-gallery.com/img/graph/48-grouped-barplot-with-ggplot22.png" data-lightbox="roadtrip" data-title="Grouped And Stacked Barplot The R Graph Gallery">
+						<img class="card-img" src="https://www.r-graph-gallery.com/img/graph/48-grouped-barplot-with-ggplot22.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtYia14_ICsQbMi3BH1i36Huq6YSIrl0_N5104zLOECNXG8hkl21q9jHR5TIUasAyxxws';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Grouped And Stacked Barplot The R Graph Gallery
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.researchgate.net/publication/334692711/figure/fig1/AS:784742941196288@1564108705040/Stacked-bar-plot-drawn-with-R-package-ggplot-Wickham-et-al-2018-code-available-at.png" data-lightbox="roadtrip" data-title="Stacked Bar Plot Drawn With R Package Ggplot Wickham Et Al 2018 Download Scientific Diagram">
+						<img class="card-img" src="https://www.researchgate.net/publication/334692711/figure/fig1/AS:784742941196288@1564108705040/Stacked-bar-plot-drawn-with-R-package-ggplot-Wickham-et-al-2018-code-available-at.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPbxLXJy4LH2vK536GXDVSRAO091cK3rzL6mlZ09WdaUuyEhxPhVffu0i59ddU94lANIM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Stacked Bar Plot Drawn With R Package Ggplot Wickham Et Al 2018 Download Scientific Diagram
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.ibb.co/T2yhtKM/Captura-de-pantalla-2020-11-26-a-las-21-18-42.png" data-lightbox="roadtrip" data-title="How To Reproduce A Stacked Bar Chart In R">
+						<img class="card-img" src="https://i.ibb.co/T2yhtKM/Captura-de-pantalla-2020-11-26-a-las-21-18-42.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZnDOTss7MeDm5Km7Y7AbUIhL9s_lipx1Dd3RRcNZNAV5lfJJ-H7hekMOIMo6qgBmrgMM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Reproduce A Stacked Bar Chart In R
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/kSitc.png" data-lightbox="roadtrip" data-title="Add Percentage Labels To Stacked Bar Chart Ggplot2 Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/kSitc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD7mSCMBcJ8n4DeRVcUqw6OPKUZnR3AUx7uY9Tz5wT9hb4O4ns-k_bx2ue1RaPySbm54Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Add Percentage Labels To Stacked Bar Chart Ggplot2 Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://4.bp.blogspot.com/-az6De1XmOK0/UMfBRFbuwiI/AAAAAAAAAa4/TOblgyvT8_I/s1600/loblolly.png" data-lightbox="roadtrip" data-title="Stacked Bar Charts In R R Bloggers">
+						<img class="card-img" src="http://4.bp.blogspot.com/-az6De1XmOK0/UMfBRFbuwiI/AAAAAAAAAa4/TOblgyvT8_I/s1600/loblolly.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPVyx9muWerAz61YsyQu-vgv8gpkfF8LqVxtDV3xfZw_ujRyRglno5GyVbzdaViTiW8vk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Stacked Bar Charts In R R Bloggers
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="j_ByLFuXrLQL_M" data-lightbox="roadtrip" data-title="Rstudio Pubs Static S3 Amazonaws Com">
+						<img class="card-img" src="j_ByLFuXrLQL_M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1uDEFxyJ2Z8e1IRtPR016w7mZDkjQ39A507qb2cIHo5jhNXSBWBkHT05Emv7z6mxHgec';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Rstudio Pubs Static S3 Amazonaws Com
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://miro.medium.com/max/1400/1*uHjHPRMWma2RiRKCFWMXUw.png" data-lightbox="roadtrip" data-title="Transform Data And Create Beautiful Visualisation Using Ggplot2 By Shubham Gupta Towards Data Science">
+						<img class="card-img" src="https://miro.medium.com/max/1400/1*uHjHPRMWma2RiRKCFWMXUw.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0YUTdl__uT0xo0ztjkW7qlHqq-OGApA1OTr-nuSxuh6L4mYuJxWUDXI_JooGpE7kR7qM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Transform Data And Create Beautiful Visualisation Using Ggplot2 By Shubham Gupta Towards Data Science
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+			
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Default Statcounter code for Github.com
+https://github.com/ -->
+<script type="text/javascript">
+var sc_project=12688405; 
+var sc_invisible=1; 
+var sc_security="91c42388"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12688405/0/91c42388/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : '226605b37c113fca7c6276931aa783e5',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.variousformatscontent.com/226605b37c113fca7c6276931aa783e5/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+
+
+
+		
+		
+		
+			</body>
+</html>

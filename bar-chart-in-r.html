@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://www.dummies.com/wp-content/uploads/r-projects-grouped-bar-plot.jpg
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Bar Chart In R</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Bar Chart In R",
+  "datePublished": "2022-01-01",
+  "image": [https://www.tutorialspoint.com/r/images/barchart_stacked.png,https://www.r-graph-gallery.com/img/graph/209-the-options-of-barplot2.png,https://statisticsglobe.com/wp-content/uploads/2019/10/figure-5-stacked-barplot-in-R-programming-language.png],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shuriken MOD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=bar chart in r",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Shuriken MOD" class="navbar-brand mb-1">Shuriken MOD</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : '226605b37c113fca7c6276931aa783e5',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.variousformatscontent.com/226605b37c113fca7c6276931aa783e5/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Bar Chart In R</h1>
+
+	
+	<div class="navi text-center">
+					<p>Today Ill be focusing on geom_bar which is used to create bar charts in R. 25 3 3 bronze badges. Here both vertical and Horizontal bars can be drawn. <br>				
+			</p>
+										<a class="badge badge-success" href="/wine-spectator-vintage-chart.html">wine spectator vintage chart</a>
+											<a class="badge badge-secondary" href="/low-fructose-fruits-chart.html">low fructose fruits chart</a>
+											<a class="badge badge-danger" href="/wind-speed-conversion-chart.html">wind speed conversion chart</a>
+											<a class="badge badge-warning" href="/dji-10-year-chart.html">dji 10 year chart</a>
+											<a class="badge badge-dark" href="/chart-patterns-cheat-sheet.html">chart patterns cheat sheet</a>
+											<a class="badge badge-secondary" href="/beachbody-program-comparison-chart.html">beachbody program comparison chart</a>
+											<a class="badge badge-secondary" href="/falcons-qb-depth-chart.html">falcons qb depth chart</a>
+											<a class="badge badge-primary" href="/house-spider-identification-chart.html">house spider identification chart</a>
+						</div>
+
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://www.tutorialspoint.com/r/images/barchart_stacked.png" data-lightbox="roadtrip" data-title="R Bar Charts">
+						<img class="card-img" src="https://www.tutorialspoint.com/r/images/barchart_stacked.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8uj-VovcArcZ8QBJ4hIWVPpGFVP-HlMz5if43LGLCZnO7D33sJZPnKWTvlPXZQBxCjbk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				R Bar Charts
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://michaeltoth.me/figures/20190426_ggplot_geom_bar/stacked_bar-1.png" data-lightbox="roadtrip" data-title="Detailed Guide To The Bar Chart In R With Ggplot R Bloggers">
+						<img class="card-img" src="https://michaeltoth.me/figures/20190426_ggplot_geom_bar/stacked_bar-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pL8rkh8OLFZu5i-pIvRW4QlQ1WCWhkcNdvfwSeuHb4R-n8tHyGCpQahR7M3mAz17eOM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Detailed Guide To The Bar Chart In R With Ggplot R Bloggers
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.tutorialspoint.com/r/images/barchart.png" data-lightbox="roadtrip" data-title="R Bar Charts">
+						<img class="card-img" src="https://www.tutorialspoint.com/r/images/barchart.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5i1Hqa7ymI7w08TILA5DTcVw0Q-De61fwJIItekScUd9DwkH856wNT4ZY1QWpmwGYsfI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				R Bar Charts
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/g5G5q.png" data-lightbox="roadtrip" data-title="Showing Data Values On Stacked Bar Chart In Ggplot2 Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/g5G5q.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj8fq8F9cM9BNoOFlMIakOcArrxsnEN6qUKkCC58FDrqFGHiHd72dvJmgbQ6OiLMcYdVI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Showing Data Values On Stacked Bar Chart In Ggplot2 Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.sthda.com/sthda/RDoc/figure/ggplot2/ggplot2-barplot-logo-data-visualization-1.png" data-lightbox="roadtrip" data-title="Ggplot2 Barplots Quick Start Guide R Software And Data Visualization Easy Guides Wiki Sthda">
+						<img class="card-img" src="http://www.sthda.com/sthda/RDoc/figure/ggplot2/ggplot2-barplot-logo-data-visualization-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9TrkKSvvJAbfWoAjBLepLou5YM73KqtzSJCLPgWVk0SW7Qpvc3URFZU55SAD6UbbruuI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ggplot2 Barplots Quick Start Guide R Software And Data Visualization Easy Guides Wiki Sthda
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://statisticsglobe.com/wp-content/uploads/2020/04/figure-1-stacked-ggplot2-bar-chart-in-R-programming-language.png" data-lightbox="roadtrip" data-title="Plot Frequencies On Top Of Stacked Bar Chart With Ggplot2 In R Example">
+						<img class="card-img" src="https://statisticsglobe.com/wp-content/uploads/2020/04/figure-1-stacked-ggplot2-bar-chart-in-R-programming-language.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIRKLsx_3W4BdOisnc7sONq8ClvI2qtLBJVc759fiO4dRSnpL95jhHjzib-vWtoi-kHw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Plot Frequencies On Top Of Stacked Bar Chart With Ggplot2 In R Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+	</center>
+</div>		  	
+		  	<h3 class="h6 p-2"><b>H is a vector or matrix containing numeric values used in bar chart.</b></h3>
+							<p class="p-2" align="justify">
+											<strong>Bar chart in r</strong>. 
+					
+											Use the typen option in the plot command to create the graph with axes titles etc but without plotting the points. 
+											You can visualize the bar in percentage instead of the raw count. 
+											The basic syntax to create a bar-chart in R is. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Bar chart in percentage. 
+											R uses the function barplot to create bar charts. 
+											Check out our Code of Conduct. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Geom_bar stat fill color width Parameters. 
+											In bar chart each of the bars can be given different colors. 
+											Let us suppose we have a vector of maximum temperatures in degree Celsius for seven days as follows. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											If the R chart is out of control then the control limits on the X-bar chart may be inaccurate and exhibit Type I or II error. 
+											Barplot H xlab ylab main namesarg col Parameters. 
+											Stacked Bar Chart in R. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											You can create a simple bar chart with this code. 
+											Xlab is the label for x axis. 
+											How do you plot a graph in R. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Bar plots can be created in R using the barplot function. 
+											If we supply a vector the plot will have bars with their heights equal to the elements in the vector. 
+											BarplotHxlabylabmain namesargcol Following is the description of the parameters used. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											VDesh is a new contributor to this site. 
+											We can supply a vector or matrix to this function. 
+											Set the stat parameter to identify the mode. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											In this article we are going to see how to modify the axis labels legend and plot labels using ggplot2 bar plot in R programming language. 
+											Set the stat parameter to identify the mode. 
+											In this article we are going to see various methods to change the color of a bar chart using ggplot2 in the R programming language. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											This article discusses how one can be. 
+											Any suggestion for which I can merge both the above plots and create grouped bar graph for Pass and Fail courses. 
+											Ggplotdata aesx quarter y profit. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Bar chart in R is one of the most popular and commonly used graph in the history of graphical representation and data visualization. 
+											Librarytidyverse ggplotmpg geom_baraesx class Here we are starting with the simplest possible ggplot bar chart we can create using geom_bar. 
+											For creating a simple bar plot we will use the function geom_bar. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Image 1 Simple bar chart. 
+											Take care in asking for clarification commenting and answering. 
+											You can specify this directly using ncol like so. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Use position fill in the geom_bar argument to create a graphic with percentage in the y-axis. 
+											Bar Charts in R are the commonly used chart to create a graphical representation of the dataset. 
+											They represent different measures as rectangular bars with the height in case of vertical graphs and width in case of horizontal graphs representing the magnitudes of their corresponding measures. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											By default plot plots the xy points. 
+											R uses the function barplot to create bar charts. 
+											Ylab is the label for y axis. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											The Bar chart is represented as vertical or horizontal bars where the bar length or height indicates the count or frequency or any other calculated measure of the variable. 
+											Ggplot econdatalong aes xCountry yvalue geom_bar statidentity fillforest green facet_wrap measure ncol1 You probably notice that the countries on the x-axis above are arranged in alphabetical. 
+											A stacked bar chart extends the standard bar chart from looking at numeric values across one categorical variable to two. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Main is the title of the bar chart. 
+											The control limits of the Xbar chart are calculated with the inputs of the process spread and mean. 
+											This parameter is a vector or matrix containing numeric values which are used in bar chart. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Each bar in a standard bar chart is divided into a number of sub-bars stacked end to end each one corresponding to a level of the second categorical variable. 
+											For creating a simple bar plot we will use the function geom_bar. 
+											Ggplot data aes x cyl fill am geom_bar position fill theme_classic Code Explanation. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Geom_bar stat fill color width Parameters. 
+											The R chart is used to review the process variation which must be in control to correctly interpret the Xbar chart. 
+											The facet_wrap command will automatically choose how many columns to use. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Bar Chart with Hover Text library plotly x. 
+											R can draw both vertical and Horizontal bars in the bar chart. 
+											Geom_col ggplot data aes x quarter y profit geom_col ggplot data aes x quarter y profit geom_col Heres the corresponding visualization. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Usually it follows a plotx y command that produces a graph. 
+									</p>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://michaeltoth.me/figures/20190426_ggplot_geom_bar/dodged_bar-1.png" data-lightbox="roadtrip" data-title="Detailed Guide To The Bar Chart In R With Ggplot R Bloggers">
+						<img class="card-img" src="https://michaeltoth.me/figures/20190426_ggplot_geom_bar/dodged_bar-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbhYXxY2QpAe14k5WYCZVx8dwqD03ixeoFMN3b_sG8SVqZxFv5KMtopHd0igtjsf5ira0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Detailed Guide To The Bar Chart In R With Ggplot R Bloggers
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.tutorialspoint.com/r/images/barchart_months_revenue.png" data-lightbox="roadtrip" data-title="R Bar Charts">
+						<img class="card-img" src="https://www.tutorialspoint.com/r/images/barchart_months_revenue.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0xoKCgNeo0yFd7B6dFzARjD_vDI0YO_H92BMDCsUInJCCEAzAZ08hHgs7e0FtVXT-GV4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				R Bar Charts
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/01/Bar-Chart-in-R-Histogram-in-R-01-1-1-1200x720.jpg" data-lightbox="roadtrip" data-title="Bar Chart And Histogram In R An In Depth Tutorial For Beginners Dataflair">
+						<img class="card-img" src="https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/01/Bar-Chart-in-R-Histogram-in-R-01-1-1-1200x720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx2LMMvxCJLiLfsbkpU13j3nr0wMGUB29oXol8u8JKSrYjrlbGOfZfgxtiozFjY9l0buY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Bar Chart And Histogram In R An In Depth Tutorial For Beginners Dataflair
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://johannesfilter.com/blog-images/EffectivityHome-and-Family.png" data-lightbox="roadtrip" data-title="How To Create Grouped Bar Charts With R And Ggplot2 Johannes Filter">
+						<img class="card-img" src="https://johannesfilter.com/blog-images/EffectivityHome-and-Family.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ56W71qivfrXUdQA3sAg0WIxZS4VcrfNtEc6JteiR_jHXlf9GQOLYR_kIPXFpzNcWOME';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Create Grouped Bar Charts With R And Ggplot2 Johannes Filter
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://statisticsglobe.com/wp-content/uploads/2019/10/figure-5-stacked-barplot-in-R-programming-language.png" data-lightbox="roadtrip" data-title="Barplot In R 8 Examples How To Create Barchart Bargraph In Rstudio">
+						<img class="card-img" src="https://statisticsglobe.com/wp-content/uploads/2019/10/figure-5-stacked-barplot-in-R-programming-language.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmhPXK3Q0Kecie3t84lWn4GCe2L8Dz0WsEst1aYBGciVtsr7JXQHRw5Owshjj_QGWgvzo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Barplot In R 8 Examples How To Create Barchart Bargraph In Rstudio
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.dummies.com/wp-content/uploads/r-projects-grouped-bar-plot.jpg" data-lightbox="roadtrip" data-title="Grouping The Bars On A Bar Plot With R Dummies">
+						<img class="card-img" src="https://www.dummies.com/wp-content/uploads/r-projects-grouped-bar-plot.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC5u-3iJPPWm9xyttctIQ0JI8hsgbp5heZBTxuWEhAaryZWzEQffTyEts7p8G9WO9B9B0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Grouping The Bars On A Bar Plot With R Dummies
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.statmethods.net/graphs/images/barplot4.jpg" data-lightbox="roadtrip" data-title="Quick R Bar Plots">
+						<img class="card-img" src="https://www.statmethods.net/graphs/images/barplot4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSvHo91mZV2OHWMvuYf4EmfiaYdsAct3AE3cO9wq-wc_R0ymxJOzhXL2lWbo-Zz8vv0OA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Quick R Bar Plots
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.dummies.com/wp-content/uploads/stats-r-bar-plots.jpg" data-lightbox="roadtrip" data-title="Bar Plots In Base R Dummies">
+						<img class="card-img" src="https://www.dummies.com/wp-content/uploads/stats-r-bar-plots.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXOTHxlgx1KB6COWD1mBuAFD20iofFdukR6cYtV2pxnNadWlq1rO3rYVmcXtFsg3LzuxE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Bar Plots In Base R Dummies
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.datamentor.io/wp-content/uploads/2017/11/bar-plot-matrix-1.png" data-lightbox="roadtrip" data-title="Bar Plot In R Using Barplot Function">
+						<img class="card-img" src="https://cdn.datamentor.io/wp-content/uploads/2017/11/bar-plot-matrix-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMBP97vI4DADITP1NkvjefvyYDeUEdUTo7GY-lOM-SL2Xmanq2ieZ-XklMoyeqfDOa-nM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Bar Plot In R Using Barplot Function
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.statmethods.net/graphs/images/barplot1.jpg" data-lightbox="roadtrip" data-title="Quick R Bar Plots">
+						<img class="card-img" src="https://www.statmethods.net/graphs/images/barplot1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqDzN91wZrsVWdwSclnljf5gjrHCrJvn_i5Gb4V_9qeA3P6jqgo43ps1QZBf5TdJvrBI8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Quick R Bar Plots
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.r-graph-gallery.com/img/graph/209-the-options-of-barplot2.png" data-lightbox="roadtrip" data-title="Barplot The R Graph Gallery">
+						<img class="card-img" src="https://www.r-graph-gallery.com/img/graph/209-the-options-of-barplot2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEeVsJUb9HAAU6_Ulm2Dd_DD6Gx4UMARF2qvpXcb5NjKcJuJa6gpmjM0FKYdAMI3mSrWs';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Barplot The R Graph Gallery
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://bookdown.org/yih_huynh/Guide-to-R-Book/Guide-to-R-Book_files/figure-html/bar-identity-1.png" data-lightbox="roadtrip" data-title="11 1 Bar Graph R For Graduate Students">
+						<img class="card-img" src="https://bookdown.org/yih_huynh/Guide-to-R-Book/Guide-to-R-Book_files/figure-html/bar-identity-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26y2LFszSIGEZ8xA7o5sFhiKK6evGt_0t2g7xLW0_UAO764f_MFpFdVxXp_emsIwOko4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				11 1 Bar Graph R For Graduate Students
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.datamentor.io/wp-content/uploads/2017/11/barplot-using-matrix.png" data-lightbox="roadtrip" data-title="Bar Plot In R Using Barplot Function">
+						<img class="card-img" src="https://cdn.datamentor.io/wp-content/uploads/2017/11/barplot-using-matrix.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDO1yooBXdtPAN945EHEuKV3f3dgNUHa-WbDXRzcH-ZR3EthbD64pJTKH2qJKBEFKJtBM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Bar Plot In R Using Barplot Function
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.learnbyexample.org/wp-content/uploads/r/rbarggplot02.png" data-lightbox="roadtrip" data-title="R Bar Plot Ggplot2 Learn By Example">
+						<img class="card-img" src="https://www.learnbyexample.org/wp-content/uploads/r/rbarggplot02.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFUr5PkEUAFDvyBNNwY9uKzMSmpEK-KtxGCUZWrtb0qyriaeZwe8rdRtXaLktBbhqrHuM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				R Bar Plot Ggplot2 Learn By Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+			
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Default Statcounter code for Github.com
+https://github.com/ -->
+<script type="text/javascript">
+var sc_project=12688405; 
+var sc_invisible=1; 
+var sc_security="91c42388"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12688405/0/91c42388/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : '226605b37c113fca7c6276931aa783e5',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.variousformatscontent.com/226605b37c113fca7c6276931aa783e5/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+
+
+
+		
+		
+		
+			</body>
+</html>

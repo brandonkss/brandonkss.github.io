@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://www.r-graph-gallery.com/131-pie-plot-with-r_files/figure-html/thecode-1.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Pie Chart In R</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Pie Chart In R",
+  "datePublished": "2022-01-01",
+  "image": [https://semba-blog.netlify.app/post/2019-07-12-pie-chart-and-donut-plot-with-ggplot2_files/figure-html/fig2-1.png,https://r-coder.com/wp-content/uploads/2020/07/pie-chart-r.png,https://www.statmethods.net/graphs/images/pie1.jpg],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shuriken MOD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=pie chart in r",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Shuriken MOD" class="navbar-brand mb-1">Shuriken MOD</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : '226605b37c113fca7c6276931aa783e5',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.variousformatscontent.com/226605b37c113fca7c6276931aa783e5/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Pie Chart In R</h1>
+
+	
+	<div class="navi text-center">
+					<p>A pie-chart is a representation of values in the form of slices of a circle with different colors. Pie charts are created with the function pie x labels where x is a non-negative numeric vector indicating the area. Additionally the argument width in the function geom_bar is no longer needed. <br>				
+			</p>
+										<a class="badge badge-dark" href="/shoe-sizing-comparison-chart.html">shoe sizing comparison chart</a>
+											<a class="badge badge-info" href="/monster-hunter-world-weakness-chart.html">monster hunter world weakness chart</a>
+											<a class="badge badge-info" href="/jic-hose-fittings-chart.html">jic hose fittings chart</a>
+											<a class="badge badge-primary" href="/english-bulldog-weight-chart.html">english bulldog weight chart</a>
+											<a class="badge badge-warning" href="/a1c-to-glucose-chart.html">a1c to glucose chart</a>
+											<a class="badge badge-primary" href="/mortgage-calculator-with-amortization-chart.html">mortgage calculator with amortization chart</a>
+											<a class="badge badge-light" href="/scrap-steel-prices-chart.html">scrap steel prices chart</a>
+											<a class="badge badge-dark" href="/food-combination-diet-chart.html">food combination diet chart</a>
+						</div>
+
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://46gyn61z4i0t1u1pnq2bbk2e-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/ggpie.png" data-lightbox="roadtrip" data-title="How To Make A Pie Chart In R Displayr">
+						<img class="card-img" src="https://46gyn61z4i0t1u1pnq2bbk2e-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/ggpie.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeWGcNYeE0mwUG9YucmJCsukaVnPsn-rrYfVHFQuTth7hJjgth5P9dIOyV2s72407I5jI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Make A Pie Chart In R Displayr
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.r-graph-gallery.com/img/graph/131-pie-plot-with-r3.png" data-lightbox="roadtrip" data-title="Pie Chart The R Graph Gallery">
+						<img class="card-img" src="https://www.r-graph-gallery.com/img/graph/131-pie-plot-with-r3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsN3yzSFE7MvOvOD0FrhXTv6WC2h0LKmWGb_XgTLXwnKwSHq7hPjXhgtVkL3teUSv4uwg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Pie Chart The R Graph Gallery
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.displayr.com/wp-content/uploads/2018/09/ggpie_780x480.png" data-lightbox="roadtrip" data-title="How To Make A Pie Chart In R Displayr">
+						<img class="card-img" src="https://www.displayr.com/wp-content/uploads/2018/09/ggpie_780x480.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8aBy11HN1NDR1uHpGJJHTUU-M5nLH3yzJ3tofBLEPrKT4nIeSFILDBESAvAT4Okie6xU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Make A Pie Chart In R Displayr
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.sthda.com/sthda/RDoc/figure/ggplot2/ggplot2-pie-chart-customized-pie-chart-2.png" data-lightbox="roadtrip" data-title="Ggplot2 Pie Chart Quick Start Guide R Software And Data Visualization Easy Guides Wiki Sthda">
+						<img class="card-img" src="http://www.sthda.com/sthda/RDoc/figure/ggplot2/ggplot2-pie-chart-customized-pie-chart-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGVrETqyCWbAH0cSJlMlFydbhmm7v6dISh2kcgmGpv0ofdgd1chvMc1BcrXnL0WtQVSY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ggplot2 Pie Chart Quick Start Guide R Software And Data Visualization Easy Guides Wiki Sthda
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.statmethods.net/graphs/images/pie1.jpg" data-lightbox="roadtrip" data-title="Quick R Pie Charts">
+						<img class="card-img" src="https://www.statmethods.net/graphs/images/pie1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmG9jtUh61MZ_uA9IMtK-1j-fC7qQBpgAjPdIiokiyQxkoQ91fG16hhU0mzacUengwAzM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Quick R Pie Charts
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/oqymb.png" data-lightbox="roadtrip" data-title="Best Way To Label Pie Charts Ggplot2 Which Respond To User Input In R Shiny Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/oqymb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEh90ktml4GMlb_J5yJwU2FT6Hmxy85Uo23h66e2fUsCDVpyRiBLkuQHkdsPRuqokPhOc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Best Way To Label Pie Charts Ggplot2 Which Respond To User Input In R Shiny Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+	</center>
+</div>		  	
+		  	<h3 class="h6 p-2"><b>How to make pie charts in R using plotly.</b></h3>
+							<p class="p-2" align="justify">
+											<strong>Pie chart in r</strong>. 
+					
+											Piex labels radius main col clockwise Following is the description of the parameters used. 
+											In R the pie chart is created using the pie function which takes positive numbers as a vector input. 
+											It is important to note that the X array set the horizontal position whilst the Y array sets the. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											R Pie Chart Syntax. 
+											The below script will create and save the pie chart Create data for the graph. 
+											The syntax to draw pie chart in R Programming is. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											With a pie chart we focus on the parts-to-whole relationship. 
+											This function takes in a vector of non-negative numbers. 
+											Input data frame has 2 columns. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											However pie charts are not recommended in the R documentation and their characteristics are limited. 
+											Pie chart is drawn using the pie function in R programming. 
+											Pie3Dx labels radius main Note. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											While it is named for its resemblance to a pie which has been sliced there are variations on the way it can be. 
+											There are various packages available for creating charts and visualizations in R. 
+											The additional parameters are used to control labels color title etc. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											A simple Pie chart in R. 
+											The result is far from optimal yet keep reading for improvements. 
+											The only difference between the pie chart code is that we set. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											A pie chart is a circle that is divided into areas or slices. 
+											The basic syntax for creating a pie-chart using the R is. 
+											We recommend you read our Getting Started guide for the latest installation or upgrade instructions then move on to our Plotly Fundamentals tutorials or dive straight in to some Basic Charts tutorials. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											One of the more popular packages used today is the ggplot2 package. 
+											The authors recommend a bar or dot plot on a pie chart because. 
+											Pie charts are the classic choice for showing proportions for mutually-exclusive categories. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											A pie chart or a circle chart is a circular statistical graphic which is divided into slices to illustrate numerical proportionIn a pie chart the arc length of each slice and consequently its central angle and area is proportional to the quantity it represents. 
+											Pie charts are best used as a basic two-dimensional example as shown above. 
+											Piex labels radius main col clockwise Parameters. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Consider for instance that you want to create a piechart of the following variable that represents the count of some event. 
+											Expenditure Housing Food Cloths Entertainment Other 600 300 150 100 200. 
+											The R pie function allows you to create a pie chart in R. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											In this post well show how to use this package to create a basic pie chart in R. 
+											Let us consider the above data represents the monthly expenditure breakdown of an individual. 
+											Pie x labels names x col NULL main NULL and the complex syntax behind this pie chart is. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											The pie R function. 
+											This parameter gives the description to the slices in pie chart. 
+											Slices are labeled with a description and the numbers corresponding to each slice are also shown in the chart. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Pie charts are not recommended in the R documentation and their features are somewhat limited. 
+											7 rows Pie Chart in R is one of the basic chart features which are represented in the circular chart. 
+											Ggplot2 allows R users to create pie charts bar graphs scatter plots regression lines and more. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											X. 
+											Pie x labels names x edges 200 radius 08 clockwise FALSE initangle if clockwise 90 else 0 density NULL angle 45 col NULL border NULL lty. 
+											Basic pie chart code of R base piea_ratiolabelsrownamesa_mat further add ratio values to labels by using paste piea_ratiolabelspasterownamesa_matc333334 final pie chart please click this link. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											R Programming Language uses the function pie to create pie charts. 
+											Plotly is a free and open-source graphing library for R. 
+											Pie chart in 3D can also be created in R by using following syntax but requires plotrix library. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Hi Apologies in advance for a long-winded mail. 
+											This parameter is a vector that contains the numeric values which are used in the pie chart. 
+											A very simple pie chart is created using just the input vector and labels. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											The authors recommend bar or dot plots over pie charts because people are able to judge length more accurately than volume. 
+											R ggplot2 pie chart labels. 
+											X 2 and xlim c05 25 to create the hole inside the pie chart. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Donut chart chart is just a simple pie chart with a hole inside. 
+											Each slice represents the count or percentage of the observations of a level for the variable. 
+											It takes positive numbers as a vector input. 
+									</p>
+							<p class="p-2" align="justify">
+					
+											Count. 
+											To know about more optional parameters in pie3D function use below command in R console. 
+									</p>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.tutorialspoint.com/r/images/city.jpg" data-lightbox="roadtrip" data-title="R Pie Charts">
+						<img class="card-img" src="https://www.tutorialspoint.com/r/images/city.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eNlLksVaA-JBhVhfqc7xOSK1YvvuEc4n5J6a_wLAG-wDlH0KGUorIkUMwUb_WkG0SgA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				R Pie Charts
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.datanovia.com/en/wp-content/uploads/dn-tutorials/ggplot2/figures/121-ggplot-pie-chart-pie-charts-1.png" data-lightbox="roadtrip" data-title="How To Create A Pie Chart In R Using Ggplot2 Datanovia">
+						<img class="card-img" src="https://www.datanovia.com/en/wp-content/uploads/dn-tutorials/ggplot2/figures/121-ggplot-pie-chart-pie-charts-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSl6o1szfqhVIbn_sBz-HgRfgW7yqeMO9tHFlB_ybNOEAWqUmoPzbsx3Ws_D2eWlpWgf4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Create A Pie Chart In R Using Ggplot2 Datanovia
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.sthda.com/sthda/RDoc/figure/ggplot2/ggplot2-pie-chart-pie-graph-simple-data-visualization-1.png" data-lightbox="roadtrip" data-title="Ggplot2 Pie Chart Quick Start Guide R Software And Data Visualization Easy Guides Wiki Sthda">
+						<img class="card-img" src="http://www.sthda.com/sthda/RDoc/figure/ggplot2/ggplot2-pie-chart-pie-graph-simple-data-visualization-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgVu_RxTU5kvv9KQxcv7KcIY2uBwmpDavq2BQjzJUzlMkW0GpZeC7oYDIF-mt2ZyApUmk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ggplot2 Pie Chart Quick Start Guide R Software And Data Visualization Easy Guides Wiki Sthda
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="tO8u71d7IpPu6M" data-lightbox="roadtrip" data-title="Rpubs Com">
+						<img class="card-img" src="tO8u71d7IpPu6M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY0hGUl8_MAoFfwvhPTe6Iz_VVcL-HSiteG48Qk0-sGIpFnvPq6pDIhdVacIQKmFzqCPE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Rpubs Com
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.statmethods.net/graphs/images/pie3.jpg" data-lightbox="roadtrip" data-title="Quick R Pie Charts">
+						<img class="card-img" src="https://www.statmethods.net/graphs/images/pie3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQdpG7LvpmhIyxGmXlYFbuwDqe-U425vwF4oVDu6pF4HRDbOlPeqCsFRJr5sUJ4nuckwY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Quick R Pie Charts
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.ytimg.com/vi/WOlRHNNzUS0/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Plotting In R With Ggpubr Pie Chart Youtube">
+						<img class="card-img" src="https://i.ytimg.com/vi/WOlRHNNzUS0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxSOYx37L0mmK6LktwgVAT9NNBHehGxKC--xjtDODmjqCuRyLhxCkwQp3YfCmdiYlZae8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Plotting In R With Ggpubr Pie Chart Youtube
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/2K8zF.jpg" data-lightbox="roadtrip" data-title="How To Do Nested Pie Chart In R Where The Outer Ring Data Is A Subset Of Inner Ring Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/2K8zF.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKrYsbgag8C6PEqFLMUDwxNYRwZkGTRo2KaMGE6r9r9NBkRajqLCH1G_yXxzg5Mm2jxCI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Do Nested Pie Chart In R Where The Outer Ring Data Is A Subset Of Inner Ring Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.learnbyexample.org/wp-content/uploads/r/typical-pie-chart.png" data-lightbox="roadtrip" data-title="R Pie Chart Base Graph Learn By Example">
+						<img class="card-img" src="https://www.learnbyexample.org/wp-content/uploads/r/typical-pie-chart.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfuxjLBwi8wiIU9YwipQl0nik81r7-WNDiI9I5vBtN-uZxp0ec8ACJI4JEnNs1e0uDV28';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				R Pie Chart Base Graph Learn By Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://r-coder.com/wp-content/uploads/2020/07/pie-chart-r.png" data-lightbox="roadtrip" data-title="Pie Chart In R With Pie Function With Several Examples">
+						<img class="card-img" src="https://r-coder.com/wp-content/uploads/2020/07/pie-chart-r.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRKES2pe04un-VFT1ZYvLaagaajqDkIsQLNIgywU7NPUDWQFggRrWAFQotGgsgnHnoig8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Pie Chart In R With Pie Function With Several Examples
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.r-graph-gallery.com/131-pie-plot-with-r_files/figure-html/thecode-1.png" data-lightbox="roadtrip" data-title="Pie Plot With Base R The R Graph Gallery">
+						<img class="card-img" src="https://www.r-graph-gallery.com/131-pie-plot-with-r_files/figure-html/thecode-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHzTFH8ju0XvTcXzu8sSssEHj5cIQy5IH9srlAucNiz99Z3DjapYOUUiVGfiCcfCmdRyY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Pie Plot With Base R The R Graph Gallery
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://r-charts.com/en/part-whole/pie-chart-labels-outside-ggplot2_files/figure-html/pie-chart-labels-outside-ggplot.png" data-lightbox="roadtrip" data-title="Pie Chart With Labels Outside In Ggplot2 R Charts">
+						<img class="card-img" src="https://r-charts.com/en/part-whole/pie-chart-labels-outside-ggplot2_files/figure-html/pie-chart-labels-outside-ggplot.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfhdQaiaxjuXfcShf4ez2xDDyyDAnGQX8SA9hGX5KGLuB8suZKIKQauPwq0rvozn1OOqY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Pie Chart With Labels Outside In Ggplot2 R Charts
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.tutorialspoint.com/r/images/3d_pie_chart.jpg" data-lightbox="roadtrip" data-title="R Pie Charts">
+						<img class="card-img" src="https://www.tutorialspoint.com/r/images/3d_pie_chart.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7-DjFzvS9_G0jSR_pNFXO4w45v7yE6sM1e1yX7psUE4nPAaDPi_sgSCiFPeCR8dJOIs';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				R Pie Charts
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://semba-blog.netlify.app/post/2019-07-12-pie-chart-and-donut-plot-with-ggplot2_files/figure-html/fig2-1.png" data-lightbox="roadtrip" data-title="Pie Chart And Donut Plot With Ggplot2 Masumbuko Semba S Blog">
+						<img class="card-img" src="https://semba-blog.netlify.app/post/2019-07-12-pie-chart-and-donut-plot-with-ggplot2_files/figure-html/fig2-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbfmAcsChsrAEx09eO3RI9C9Omc7OmK4X5Ygbz2v-ckFn_HtCLVJ5GMgMjDzaI-poG4Ak';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Pie Chart And Donut Plot With Ggplot2 Masumbuko Semba S Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://static.javatpoint.com/tutorial/r/images/r-pie-charts-output1.png" data-lightbox="roadtrip" data-title="R Pie Charts Javatpoint">
+						<img class="card-img" src="https://static.javatpoint.com/tutorial/r/images/r-pie-charts-output1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQTkX3IPNK4SsTXzlzDiht5v1kwE_YkGhR_2yZ-21dPW6sl-Uxkl3mpH3ZoKUCxp5uohU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				R Pie Charts Javatpoint
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+			
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Default Statcounter code for Github.com
+https://github.com/ -->
+<script type="text/javascript">
+var sc_project=12688405; 
+var sc_invisible=1; 
+var sc_security="91c42388"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12688405/0/91c42388/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : '226605b37c113fca7c6276931aa783e5',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.variousformatscontent.com/226605b37c113fca7c6276931aa783e5/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+
+
+
+		
+		
+		
+			</body>
+</html>
